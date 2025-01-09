@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Journal</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-gradient-pink text-white text-center py-3 shadow-sm">
+        <h1>📓 My Daily Journal</h1>
+    </header>
+
+    <main>
+        <!-- Journal Input Section -->
+        <section class="journal-input container my-4">
+            <div class="mb-3">
+                <input type="date" id="journal-date" class="form-control rounded-pill" placeholder="Select Date">
+            </div>
+            <div class="mb-3">
+                <textarea id="journal-entry" class="form-control rounded" rows="5" placeholder="Write about your day..."></textarea>
+            </div>
+            <button id="add-entry-btn" class="btn btn-pink w-100 rounded-pill">Add Journal Entry</button>
+        </section>
+
+        <!-- Journal Entries Section -->
+        <section class="journal-entries container my-4">
+            <h2 class="text-center fw-bold mb-4">My Journal Entries</h2>
+            <div id="entries-container"></div>
+        </section>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
